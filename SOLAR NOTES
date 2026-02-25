@@ -49,3 +49,28 @@ How to Access Solr UI:
 *open browser using: http://localhost:8983
 *You’ll see the Solr Admin UI Dashboard.
 *That is Solr’s control panel.
+
+What Can we Access Inside the UI?
+🔹 Dashboard:
+
+*JVM memory
+*System info
+*Solr version
+*Core count
+(This is your health monitor).
+
+🔹 Core Admin (Standalone Mode)
+
+*Create core
+*Reload core
+*Delete core
+*Swap core
+(Think core as one search Database) 
+
+🔹 Collections (SolrCloud Mode)
+
+*Collections
+*Shards
+*Replicas
+(This is distributed Solr).
+

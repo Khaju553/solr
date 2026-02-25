@@ -1,3 +1,9 @@
 Apache Solr is a web application which is built on lucene API librabries. 
 Extending and overriding some of its features 
-It offers REST ful APIs(XML,JSON,CSV,binary and HTTP) fo
+It offers REST ful APIs(XML,JSON,CSV,binary and HTTP) for easy interactions 
+Initially it is designed for limited data set 
+Now the newer version is re-architected for huge big data sets, which includes terabytes to petabytes 
+Solr provides advanced full-text search capabilities, web-scale dynamic and elastic scaling and anadministratic application for easy configuration and management. 
+It simplifies the development pf search applicatioin. 
+The Apache Solr is includes Request handlers for incoming requestr and request writers/update handlers for updating the index
+Solr instances and core can host multiple "cores and indexes". which is analogeous to datasets

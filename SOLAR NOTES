@@ -7,3 +7,45 @@ Solr provides advanced full-text search capabilities, web-scale dynamic and elas
 It simplifies the development pf search applicatioin. 
 The Apache Solr is includes Request handlers for incoming requestr and request writers/update handlers for updating the index
 Solr instances and core can host multiple "cores and indexes". which is analogeous to datasets
+
+Real Time Example:
+
+If your data is stored in a normal database, searching text quickly and intelligently is hard and slow.
+Apache Solr is like a super-powered search engine you attach to your data.
+It is built on top of Apache Lucene, which is a low-level text search library.
+Think of it like this:
+Lucene = the engine inside the car
+Solr = the full car (engine + steering + dashboard + controls)
+
+How Solr Works:
+
+We Give Documents in JSON/XML format.
+(JSON)
+{
+  "id": "1",
+  "name": "Red Running Shoes",
+  "price": 80,
+  "category": "shoes"
+}
+
+Solr:
+*Breaks text into tokens
+*Stores them in an inverted index
+*Makes it searchable
+
+How We Search: (Querying)
+
+*we send a request like:
+http://localhost:8983/solr/products/select?q=red+shoes
+
+Solr:
+*Looks into its index
+*Finds matching documents
+*Scores them by relevance
+*Returns results in JSON
+
+How to Access Solr UI:
+
+*open browser using: http://localhost:8983
+*You’ll see the Solr Admin UI Dashboard.
+*That is Solr’s control panel.
